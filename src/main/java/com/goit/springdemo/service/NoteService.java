@@ -1,5 +1,6 @@
-package com.goit.springdemo;
+package com.goit.springdemo.service;
 
+import com.goit.springdemo.model.Note;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

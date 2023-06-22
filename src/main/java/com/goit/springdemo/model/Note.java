@@ -1,4 +1,4 @@
-package com.goit.springdemo;
+package com.goit.springdemo.model;
 
 public class Note {
     private Long id;
