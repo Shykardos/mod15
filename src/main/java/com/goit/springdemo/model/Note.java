@@ -1,12 +1,29 @@
-package com.goit.springdemo;
+package com.goit.springdemo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Note {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String content;
 
     public Note() {
     }
+
+    public Note(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+    // getters and setters
 
     public Long getId() {
         return id;
